@@ -17,7 +17,7 @@ mongoose.connect('mongodb+srv://Registration:2111087@cluster0.wexksa1.mongodb.ne
     const db =mongoose.connection;
 
 const app = express()
-app.use('/', express.static(path.join(__dirname, 'static')))
+// app.use('/static', express.static(path.join(__dirname, 'static')))
 app.use(bodyParser.json())
 app.use(cors());
 
